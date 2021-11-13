@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <header class="nav-container">
+        <h3>View high scores</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <h3>Time:<span id="time">75</span> </h3>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section id="quiz-container">
+            <div class="quiz-heading">
+                <h2>Coding Quiz Challenge</h2>
+            </div>
+            <div class="quiz-text">
+                <p>This test will assess your knowledge of basic JavaScript with 5 multiple choice questions. Click the "Start" button to begin the quiz. You will have 75 seconds to complete the assessment. Each incorrect answer will cost you 10 seconds
+                    of clock time. Your score will your be your time remaining.
+                </p>
+                <p><strong>Good Luck!</strong></p>
+                <button type="button" id="start-quiz-btn" onclick="startQuiz()">Start</button>
+            </div>
+        </section>
+
+        <section id="question-one-container">
+            <div class="question-one-heading">
+                <h3>Inside which HTML element do we put the JavaScript?</h3>
+            </div>
+            <div class="question-one-text">
+                <button onclick="wrongAnswer1()">&#60;scripting&#62;</button>
+                <button onclick="wrongAnswer1()">&#60;js&#62;</button>
+                <button onclick="wrongAnswer1()">&#60;javascript&#62;</button>
+                <button onclick="correctAnswer1()">&#60;script&#62;</button>
+                <div class="answer-text">
+                    <p id="wrong-answer1">Wrong Answer Noob, study more!!! -15 seconds off the clock!</p>
+                    <p id="correct-answer1">Good job, +15 points. Noob.</p>
+                </div>
+            </div>
+        </section>
+        <section id="question-two-container">
+            <div class="question-two-heading">
+                <h3>Inside which HTML element do we put the JavaScript?</h3>
+            </div>
+            <div class="question-two-text">
+                <button onclick="wrongAnswer2()">&#60;QUESTION2WRONG&#62;</button>
+                <button onclick="wrongAnswer2()">&#60;QUESTION2WRONG&#62;</button>
+                <button onclick="wrongAnswer2()">&#60;QUESTION2WRONG&#62;</button>
+                <button onclick="correctAnswer2()">&#60;script&#62;</button>
+                <div class="answer-text">
+                    <p id="wrong-answer2">Wrong Answer Noob, study more!!! -15 seconds off the clock!</p>
+                    <p id="correct-answer2">Good job, +15 points. Noob.</p>
+                </div>
+            </div>
+        </section>
+        <section id="question-three-container">
+            <div class="question-three-heading">
+                <h3>Inside which HTML element do we put the JavaScript?</h3>
+            </div>
+            <div class="question-three-text">
+                <button onclick="wrongAnswer3()">&#60;QUESTION3WRONG&#62;</button>
+                <button onclick="wrongAnswer3()">&#60;QUESTION3WRONG&#62;</button>
+                <button onclick="wrongAnswer3()">&#60;QUESTION3WRONG&#62;</button>
+                <button onclick="correctAnswer3()">&#60;script&#62;</button>
+                <div class="answer-text">
+                    <p id="wrong-answer3">Wrong Answer Noob, study more!!! -15 seconds off the clock!</p>
+                    <p id="correct-answer3">Good job, +15 points. Noob.</p>
+                </div>
+            </div>
+        </section>
+        <section id="question-four-container">
+            <div class="question-four-heading">
+                <h3>Inside which HTML element do we put the JavaScript?</h3>
+            </div>
+            <div class="question-four-text">
+                <button onclick="wrongAnswer4()">&#60;QUESTION4WRONG&#62;</button>
+                <button onclick="wrongAnswer4()">&#60;QUESTION4WRONG&#62;</button>
+                <button onclick="wrongAnswer4()">&#60;QUESTION4WRONG&#62;</button>
+                <button onclick="correctAnswer4()">&#60;script&#62;</button>
+                <div class="answer-text">
+                    <p id="wrong-answer4">Wrong Answer Noob, study more!!! -15 seconds off the clock!</p>
+                    <p id="correct-answer4">Good job, +15 points. Noob.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
